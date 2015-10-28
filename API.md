@@ -1,5 +1,7 @@
 # Workflow
 
+## Fetch User ID and Course Name+ID
+
 ## Fetch Next Item ID
 https://www.coursera.org/api/opencourse.v1/user/2795938/course/hadoop
 

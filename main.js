@@ -6,9 +6,18 @@ var httpGet = function(url) {
     return xmlHttp.responseText;
 };
 
-var fetchUserInfo = function() {
-    
+var fetchUserId = function() {
+    var url = "https://www.coursera.org/api/myAdmins.v1/?fields=partners"
+    var resp = httpGet(url);
+    // todo
 };
+
+var fetchEnrollments = function() {
+    var url = "https://api.coursera.org/api/users/v1/me/enrollments";
+    var resp = httpGet(url);
+    var data = JSON.parse(resp);
+    // todo
+}
 
 var fetchNextItem = function(user_id, course_name) {
     var url = "https://www.coursera.org/api/opencourse.v1/user/" + user_id + "/course/" + course_name;
